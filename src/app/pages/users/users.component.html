@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Angular 14 CRUD Example </h1>
+    <div class="text-right mb-2">
+        <a href="#" routerLink="" class="btn btn-success">Create New User</a>
+    </div>
+      <div>
+        {{ users }}
+      </div>
+    <table class="table table-striped">
+        <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Body</th>
+                <th width="250px">Action</th>
+              </tr>
+        </thead>
+        <tbody>
+              <tr *ngFor="let user of posts">
+                <td>{{ user.id }}</td>
+                <td>{{ user.title }}</td>
+                <td>{{ user.body }}</td>
+                <td class="text-right">
+                    <a href="#"  class="btn btn-info">View</a>
+                </td>
+              </tr>
+        </tbody>
+    </table>
+ </div>
