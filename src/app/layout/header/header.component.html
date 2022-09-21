@@ -10,8 +10,8 @@
           <div class="col-lg-6 text-center text-lg-right">
             <ul class="menu list-inline mb-0">
               <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-              <li class="list-inline-item"><a href="register.html">Register</a></li>
-              <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+              <li class="list-inline-item"><a routerLink="/register">Register</a></li>
+              <li class="list-inline-item"><a routerLink="/contact">Contact</a></li>
               <li class="list-inline-item"><a href="#">Recently viewed</a></li>
             </ul>
           </div>
@@ -37,7 +37,7 @@
                 </p>
               </form>
               <p class="text-center text-muted">Not registered yet?</p>
-              <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
+              <p class="text-center text-muted"><a routerLink="/register"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
             </div>
           </div>
         </div>
@@ -47,14 +47,20 @@
       
     </div>
     <nav class="navbar navbar-expand-lg">
-      <div class="container"><a href="index.html" class="navbar-brand home"><img src="assets/img/logo.png" alt="Obaju logo" class="d-none d-md-inline-block"><img src="assets/img/logo-small.png" alt="Obaju logo" class="d-inline-block d-md-none"><span class="sr-only">Obaju - go to homepage</span></a>
+      <div class="container">
+        <a routerLink="/" class="navbar-brand home">
+          <img src="assets/img/logo.png" alt="Obaju logo" class="d-none d-md-inline-block">
+          <img src="assets/img/logo-small.png" alt="Obaju logo" class="d-inline-block d-md-none"><span class="sr-only">Obaju - go to homepage</span>
+        </a>
         <div class="navbar-buttons">
           <button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
           <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></button><a href="basket.html" class="btn btn-outline-secondary navbar-toggler"><i class="fa fa-shopping-cart"></i></a>
         </div>
         <div id="navigation" class="collapse navbar-collapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item">
+              <a routerLink="/" class="nav-link">Home</a>
+            </li>
             <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Men<b class="caret"></b></a>
               <ul class="dropdown-menu megamenu">
                 <li>
@@ -62,44 +68,52 @@
                     <div class="col-md-6 col-lg-3">
                       <h5>Clothing</h5>
                       <ul class="list-unstyled mb-3">
-                        <li class="nav-item"><a href="category.html" class="nav-link">T-shirts</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Shirts</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Pants</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Accessories</a></li>
+                        <li class="nav-item">
+                          <a routerLink="/category" class="nav-link">T-shirts</a>
+                        </li>
+                        <li class="nav-item">
+                          <a routerLink="/category" class="nav-link">Shirts</a>
+                        </li>
+                        <li class="nav-item">
+                          <a routerLink="/category" class="nav-link">Pants</a>
+                        </li>
+                        <li class="nav-item">
+                          <a routerLink="/category" class="nav-link">Accessories</a>
+                        </li>
                       </ul>
                     </div>
                     <div class="col-md-6 col-lg-3">
                       <h5>Shoes</h5>
                       <ul class="list-unstyled mb-3">
-                        <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Trainers</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Sandals</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Hiking shoes</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Casual</a></li>
                       </ul>
                     </div>
                     <div class="col-md-6 col-lg-3">
                       <h5>Accessories</h5>
                       <ul class="list-unstyled mb-3">
-                        <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Trainers</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Sandals</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Hiking shoes</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Casual</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Hiking shoes</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Casual</a></li>
                       </ul>
                     </div>
                     <div class="col-md-6 col-lg-3">
                       <h5>Featured</h5>
                       <ul class="list-unstyled mb-3">
-                        <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Trainers</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Sandals</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Hiking shoes</a></li>
                       </ul>
                       <h5>Looks and trends</h5>
                       <ul class="list-unstyled mb-3">
-                        <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Trainers</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Sandals</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Hiking shoes</a></li>
                       </ul>
                     </div>
                   </div>
@@ -113,36 +127,36 @@
                     <div class="col-md-6 col-lg-3">
                       <h5>Clothing</h5>
                       <ul class="list-unstyled mb-3">
-                        <li class="nav-item"><a href="category.html" class="nav-link">T-shirts</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Shirts</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Pants</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Accessories</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">T-shirts</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Shirts</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Pants</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Accessories</a></li>
                       </ul>
                     </div>
                     <div class="col-md-6 col-lg-3">
                       <h5>Shoes</h5>
                       <ul class="list-unstyled mb-3">
-                        <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Trainers</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Sandals</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Hiking shoes</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Casual</a></li>
                       </ul>
                     </div>
                     <div class="col-md-6 col-lg-3">
                       <h5>Accessories</h5>
                       <ul class="list-unstyled mb-3">
-                        <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Trainers</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Sandals</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Hiking shoes</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Casual</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Hiking shoes</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Casual</a></li>
                       </ul>
                       <h5>Looks and trends</h5>
                       <ul class="list-unstyled mb-3">
-                        <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Trainers</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Sandals</a></li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Hiking shoes</a></li>
                       </ul>
                     </div>
                     <div class="col-md-6 col-lg-3">
@@ -160,8 +174,10 @@
                     <div class="col-md-6 col-lg-3">
                       <h5>Shop</h5>
                       <ul class="list-unstyled mb-3">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Homepage</a></li>
-                        <li class="nav-item"><a href="category.html" class="nav-link">Category - sidebar left</a></li>
+                        <li class="nav-item">
+                          <a routerLink="/" class="nav-link">Homepage</a>
+                        </li>
+                        <li class="nav-item"><a routerLink="/category" class="nav-link">Category - sidebar left</a></li>
                         <li class="nav-item"><a href="category-right.html" class="nav-link">Category - sidebar right</a></li>
                         <li class="nav-item"><a href="category-full.html" class="nav-link">Category - full width</a></li>
                         <li class="nav-item"><a href="detail.html" class="nav-link">Product detail</a></li>
@@ -170,7 +186,7 @@
                     <div class="col-md-6 col-lg-3">
                       <h5>User</h5>
                       <ul class="list-unstyled mb-3">
-                        <li class="nav-item"><a href="register.html" class="nav-link">Register / login</a></li>
+                        <li class="nav-item"><a routerLink="/register" class="nav-link">Register / login</a></li>
                         <li class="nav-item"><a href="customer-orders.html" class="nav-link">Orders history</a></li>
                         <li class="nav-item"><a href="customer-order.html" class="nav-link">Order history detail</a></li>
                         <li class="nav-item"><a href="customer-wishlist.html" class="nav-link">Wishlist</a></li>
@@ -196,7 +212,7 @@
                         <li class="nav-item"><a href="text.html" class="nav-link">Text page</a></li>
                         <li class="nav-item"><a href="text-right.html" class="nav-link">Text page - right sidebar</a></li>
                         <li class="nav-item"><a href="404.html" class="nav-link">404 page</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a routerLink="/contact" class="nav-link">Contact</a></li>
                       </ul>
                     </div>
                   </div>
