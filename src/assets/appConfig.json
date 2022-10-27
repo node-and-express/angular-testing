@@ -1,0 +1,9 @@
+{
+    "appName": "LaravelAngular",
+    "apiBaseUrl": "http://127.0.0.1:8000/api",
+    "mapsApiKey": "AIzaSyAdGc2L2VjOlGeRQ8ITHix3Q1t-oGoXFfU",
+    "developerName": "Ch Abid",
+    "developerUrl": "https://www.linkedin.com/in/ch-abid-332227215/",
+    "defaultCategoryScope": "ecommerce",
+    "defaultBannerScope": "ecommerce"
+}

@@ -28,6 +28,8 @@ const routes: Routes = [
     path: 'users',
     component: UsersComponent,
   },
+  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
